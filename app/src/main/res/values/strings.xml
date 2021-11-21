@@ -10,5 +10,8 @@
     <string name="tvFecha">Fecha de nacimiento</string>
     <string name="tvNumCuenta">Numero de Cuenta</string>
     <string name="tvCorreo">Correo</string>
+    <string name="tvEdad">Edad</string>
+    <string name="tvHoroscopo">Horóscopo chino</string>
+
 
 </resources>
