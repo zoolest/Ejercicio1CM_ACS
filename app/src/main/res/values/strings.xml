@@ -2,6 +2,8 @@
     <string name="app_name">Ejercicio1CM_ACS</string>
     <string name="BotonContinuar">Continuar</string>
     <string name="BotonRegresar">Regresar</string>
+
+    <string name="PickDate">Ingresa Fecha</string>
     <string name="ApretarParaContinuar">Ingresa tus datos y se calculará tu edad y signo respecto al horóscopo chino</string>
     <string name="tvNombre">Nombre</string>
     <string name="tvApellido">Apellido</string>
