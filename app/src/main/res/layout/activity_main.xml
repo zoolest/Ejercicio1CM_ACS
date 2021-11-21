@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.056" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -65,53 +65,36 @@
         app:layout_constraintVertical_bias="0.156" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/etApellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
+        android:layout_marginStart="100dp"
         android:layout_marginEnd="101dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="23dp"
         android:ems="10"
-        android:hint="@string/tvNumCuenta"
-        android:inputType="number"
-        android:maxLength="9"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#80FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="41dp"
-        android:ems="10"
-        android:hint="@string/tvCorreo"
+        android:hint="@string/tvApellido"
         android:inputType="textPersonName"
-        android:textColor="#FFF9F9"
+        android:minHeight="48dp"
+        android:textColor="#FBF9F9"
         android:textColorHint="#80FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/etFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
         android:layout_marginEnd="101dp"
+        android:height="48dp"
         android:ems="10"
         android:hint="@string/tvFecha"
         android:inputType="date"
+        android:minHeight="48dp"
         android:textColor="#FFFCFC"
         android:textColorHint="#80FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -122,22 +105,45 @@
         app:layout_constraintVertical_bias="0.329" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/etNumCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="101dp"
         android:layout_marginEnd="101dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginBottom="28dp"
+        android:height="48dp"
         android:ems="10"
-        android:hint="@string/tvApellido"
-        android:inputType="textPersonName"
-        android:textColor="#FBF9F9"
+        android:hint="@string/tvNumCuenta"
+        android:inputType="number"
+        android:maxLength="9"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
         android:textColorHint="#80FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintVertical_bias="0.422" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="@string/tvCorreo"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FFF9F9"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
