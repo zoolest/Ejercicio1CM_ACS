@@ -1,6 +1,5 @@
 package com.example.ejercicio1cm_acs
 
-import android.app.Activity
 import android.app.DatePickerDialog
 import android.app.Dialog
 import android.content.Context
@@ -9,7 +8,7 @@ import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
 import java.util.*
 
-class DatePickerFragment (val listener: (day:Int, month:Int, year:Int) -> Unit): DialogFragment(),
+class DatePickerFragment(val listener: (day: Int, month: Int, year: Int) -> Unit): DialogFragment(),
     DatePickerDialog.OnDateSetListener{
 
 

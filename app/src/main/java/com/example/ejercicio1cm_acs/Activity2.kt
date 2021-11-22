@@ -16,7 +16,8 @@ class Activity2 : AppCompatActivity() {
         val correoRecibido = bundle?.getString("correo", "")
         val numCuentaRecibido = bundle?.getInt("numCuenta", 0)
         //val fechaRecibida = bundle?.getInt("fecha", 0)
-        val fechaRecibida = bundle?.getInt("fecha",0)
+        //val fechaRecibida = bundle?.getInt("fecha",0)
+        val edadRecibida = bundle?.getInt("edad",0)
         //val fechaHoy = Date(System.currentTimeMillis())
 
 
@@ -36,8 +37,7 @@ class Activity2 : AppCompatActivity() {
         tvApellido2.text=apellidoRecibido
         tvNumCuenta2.text= numCuentaRecibido.toString()
         tvCorreo2.text=correoRecibido
-
-        tvEdad2.text= fechaRecibida.toString()
+        tvEdad2.text= edadRecibida.toString()
 
         //Toast.makeText(this,"Text  $fechaHoy",Toast.LENGTH_LONG)
         //Toast.makeText(this, "Nombre: $usuarioRecibido, Apellido: $apellidoRecibido, Correo: $correoRecibido, Num Cuenta: $numCuentaRecibido",Toast.LENGTH_LONG).show()
