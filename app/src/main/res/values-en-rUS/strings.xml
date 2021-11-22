@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ejercicio1CM_ACS</string>
+    <string name="BotonContinuar">Continue</string>
+    <string name="BotonRegresar">Back</string>
+    <string name="PickDate">Enter the date</string>
+    <string name="ApretarParaContinuar">Enter your data and the app will tell you your chinese horoscope</string>
+    <string name="tvNombre">Name</string>
+    <string name="tvApellido">Last name</string>
+    <string name="tvFecha">Birthday</string>
+    <string name="tvNumCuenta">Account number</string>
+    <string name="tvCorreo">Mail</string>
+    <string name="tvEdad">Age</string>
+    <string name="tvHoroscopo">Chinese horoscope</string>
+</resources>

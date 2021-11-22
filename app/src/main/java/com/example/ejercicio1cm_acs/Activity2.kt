@@ -1,10 +1,9 @@
 package com.example.ejercicio1cm_acs
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
 class Activity2 : AppCompatActivity() {
@@ -47,9 +46,10 @@ class Activity2 : AppCompatActivity() {
 
     }
     fun clickBotonRegresar(view: android.view.View) {
-
+        val intent= Intent(this,MainActivity::class.java)
         //Toast.makeText(this, "Nombre: $usuarioRecibido, Num Cuenta: $numCuentaRecibido",Toast.LENGTH_LONG).show()
 
-        //startActivity(intent)
+        startActivity(intent)
+
     }
 }

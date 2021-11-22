@@ -65,9 +65,10 @@ class MainActivity : AppCompatActivity() {
         val numCuenta = Integer.parseInt(etNumCuenta.text.toString())
 
         //val fecha = Integer.parseInt(etFecha.text.toString())
-        val fecha =  Integer.parseInt(DatePickerFragment{ day, month, year -> onDateSelected(day,month,year)}.toString())
-        val fechaHoy = Integer.parseInt(Date(System.currentTimeMillis()).toString())
-        val Edad = fechaHoy-fecha
+        //val fecha =  Integer.parseInt(DatePickerFragment{ day, month, year -> onDateSelected(day,month,year)}.toString())
+        //val fecha = onDateSelected()
+        //val fechaHoy = Integer.parseInt(Date(System.currentTimeMillis()).toString())
+        //val Edad = fechaHoy-fecha
 
         val parametros = Bundle()
         parametros.putString("nombre",nombre)
@@ -79,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         parametros.putInt("numCuenta",numCuenta)
         //parametros.putInt("numCuenta",314145678)
         //parametros.putInt("fecha", fecha)
-        parametros.putInt("Edad", Edad)
+        //parametros.putInt("Edad", Edad)
         //parametros.putString("fecha", fecha.toString())
 
         intent.putExtras(parametros)
