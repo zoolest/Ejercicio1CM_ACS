@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
         val correo = etCorreo.text.toString()
         val numCuenta = Integer.parseInt(etNumCuenta.text.toString())
         val edad = Integer.parseInt(edad.toString())
-        val chYear = Integer.parseInt(chYear.toString())
+        val chYear = (chYear.toString())
 
 
         val parametros = Bundle()
@@ -115,8 +115,8 @@ class MainActivity : AppCompatActivity() {
         //parametros.putInt("numCuenta",314145678)
         //parametros.putInt("fecha", fecha)
         parametros.putInt("edad", edad)
-
-        parametros.putInt("chYear", chYear)
+        intent.putExtra("chYear",chYear)
+        //parametros.putInt("chYear", chYear)
         //parametros.putString("fecha", fecha.toString())
 
         intent.putExtras(parametros)

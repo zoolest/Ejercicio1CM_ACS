@@ -15,8 +15,9 @@ class Activity2 : AppCompatActivity() {
         val apellidoRecibido = bundle?.getString("apellido", "")
         val correoRecibido = bundle?.getString("correo", "")
         val numCuentaRecibido = bundle?.getInt("numCuenta", 0)
-        val chYearRecibido= bundle?.getInt("chYear", 0)
+        //val chYearRecibido= bundle?.getInt("chYear", 0)
         val edadRecibida = bundle?.getInt("edad",0)
+        val chYearRecibido= getIntent().getStringExtra("chYear")
 
 
         val tvNombre2 = findViewById<TextView>(R.id.tvNombre2)
@@ -32,10 +33,10 @@ class Activity2 : AppCompatActivity() {
         tvNumCuenta2.text= numCuentaRecibido.toString()
         tvCorreo2.text=correoRecibido
         tvEdad2.text= edadRecibida.toString()
-        tvHoroscopo2.text=chYearRecibido.toString()
+        //tvHoroscopo2.text=chYearRecibido.toString()
         //Toast.makeText(this, "Nombre: $usuarioRecibido, Apellido: $apellidoRecibido, Correo: $correoRecibido, Num Cuenta: $numCuentaRecibido",Toast.LENGTH_LONG).show()
 
-            if (chYearRecibido!!.equals("1924")||chYearRecibido.equals("1936")
+            if (chYearRecibido.equals("1924")||chYearRecibido.equals("1936")
                 ||chYearRecibido.equals("1948")||chYearRecibido.equals("1960")
                 ||chYearRecibido.equals("1972")||chYearRecibido.equals("1984")
                 ||chYearRecibido.equals("1996")||chYearRecibido.equals("2008")
