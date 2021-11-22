@@ -12,8 +12,6 @@ import androidx.annotation.RequiresApi
 
 import java.util.*
 
-
-
 private lateinit var etNombre: EditText
 private lateinit var etApellido: EditText
 private lateinit var etCorreo: EditText
@@ -21,11 +19,6 @@ private lateinit var etNumCuenta: EditText
 private lateinit var etFecha: EditText
 
 class MainActivity : AppCompatActivity() {
-    //private lateinit var etFecha:EditText
-    //private lateinit var button: Button
-    //private var Edad:Int = 0
-
-    //private lateinit var
     private lateinit var btCalendario: Button
     var edad:Int =0
     var chYear:Int =0
@@ -38,17 +31,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
         etNombre = findViewById(R.id.etNombre)
         etApellido = findViewById(R.id.etApellido)
         etCorreo = findViewById(R.id.etCorreo)
         etNumCuenta = findViewById(R.id.etNumCuenta)
         etFecha = findViewById(R.id.etFecha)
-
         //etFecha.setOnClickListener { showDatePickerDialog() }
-
-
         val fechaHoy = Date(System.currentTimeMillis()).toString()
         val tvfechaHoy = findViewById<TextView>(R.id.tvfechaHoy)
         tvfechaHoy.text= fechaHoy.toString()
@@ -72,41 +60,6 @@ class MainActivity : AppCompatActivity() {
         currentMonth = Integer.parseInt(cMonth)
         currentDay = Integer.parseInt(cDay)
     }
-    /*
-    fun selectDate( view: View): Int {
-        val c = Calendar.getInstance()
-        var cDay =c.get(Calendar.DAY_OF_MONTH)
-        var cMonth = c.get(Calendar.YEAR)
-        var cYear= c.get(Calendar.YEAR)
-        val calendarDialog= DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
-            cDay=dayOfMonth
-            cMonth=month
-            cYear=year
-            button.setOnClickListener{
-                val currentYear= Calendar.getInstance().get(Calendar.YEAR)
-                val Edad= currentYear-cYear
-            }
-            etFecha.setText(" $cDay / ${cMonth+1} / $year")
-
-        },cYear, cMonth,cDay)
-
-return Edad
-
-    private fun showDatePickerDialog() {
-        val datePicker= DatePickerFragment{day, month,year -> onDateSelected(day,month,year)}
-        datePicker.show(supportFragmentManager,"datePicker")
-    }
-    fun onDateSelected(day:Int,month:Int, year:Int){
-        val selectedMonth = month + 1
-       val fecha= etFecha.setText(" $day / $selectedMonth / $year")
-        return fecha
-
-    }
-    }*/
-
-
-
-
 
     fun datePicker(etFecha:TextView, btCalendario:Button) {
         val c = Calendar.getInstance()
@@ -151,17 +104,6 @@ return Edad
         val chYear = Integer.parseInt(chYear.toString())
 
 
-
-        //val fecha= Calendar.getInstance()
-
-
-
-        //val fecha = Integer.parseInt(etFecha.text.toString())
-        //val fecha =  Integer.parseInt(DatePickerFragment{ day, month, year -> onDateSelected(day,month,year)}.toString())
-        //val fecha = onDateSelected()
-        //val fechaHoy = Integer.parseInt(Date(System.currentTimeMillis()).toString())
-        //val Edad = fechaHoy-onDateSelected(d)
-
         val parametros = Bundle()
         parametros.putString("nombre",nombre)
         //parametros.putString("nombre","Usuario")
@@ -181,11 +123,7 @@ return Edad
 
         startActivity(intent)
 
-
     }
-
-
-
 
 }
 
